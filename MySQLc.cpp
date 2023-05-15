@@ -7,8 +7,8 @@
 int main()
 {
     string nit, nombre, apellido, direccion, fecha_nacimineto;
-    int telefono;
-
+    int telefono = 0;
+    
     cout << "ingrese nit:" << endl;
     getline(cin, nit);
     cout << "ingrese nombres:" << endl;
@@ -22,9 +22,12 @@ int main()
     cin.ignore();
     cout << "ingrese fecha de nacimiento:" << endl;
     cin >> fecha_nacimineto;
+    
     cliente c = cliente(nit, nombre, apellido, direccion, telefono, fecha_nacimineto);
     c.crear();
     c.Leer();
+    
+    
    /* MYSQL* conectar;
     MYSQL_ROW fila; 
     MYSQL_RES* resultado;

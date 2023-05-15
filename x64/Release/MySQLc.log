@@ -1,8 +1,7 @@
-﻿  MySQLc.cpp
-  cliente.cpp
+﻿  main_proveedores.cpp
   Generando código
-  124 of 166 functions (74.7%) were compiled, the rest were copied from previous compilation.
-    82 functions were new in current compilation
-    15 functions had inline decision re-evaluated but remain unchanged
+  141 of 166 functions (84.9%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    8 functions had inline decision re-evaluated but remain unchanged
   Generación de código finalizada
   MySQLc.vcxproj -> C:\Users\pablo\OneDrive\Documentos\MySQLc\x64\Release\MySQLc.exe

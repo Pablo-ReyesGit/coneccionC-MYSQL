@@ -11,7 +11,7 @@ private:
 public:
 	void abrir_conexion() {
 		conectar = mysql_init(0);
-		conectar = mysql_real_connect(conectar, "localhost", "usr_empresa", "empres@123", "db_empresa", 3306, NULL, 0);
+		conectar = mysql_real_connect(conectar, "localhost", "root", "pablo123,reyesSQL", "db_empresa", 3306, NULL, 0);
 	}
 
 	MYSQL* setConectar() {

@@ -133,13 +133,16 @@
   <ItemGroup>
     <ClCompile Include="cliente.cpp" />
     <ClCompile Include="ConexionBD.cpp" />
+    <ClCompile Include="main_proveedores.cpp" />
     <ClCompile Include="MySQLc.cpp" />
     <ClCompile Include="persona.cpp" />
+    <ClCompile Include="proveedores.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="cliente.h" />
     <ClInclude Include="ConexionBD.h" />
     <ClInclude Include="persona.h" />
+    <ClInclude Include="proveedores.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -34,7 +34,7 @@ public:
 		cn.abrir_conexion();
 		if (cn.setConectar()) {
 			string t = to_string(telefono);
-			string insert = "select * from clientes(id_clientes,nit,nombres,apellidos,direccion,telefono,fecha_nacimiento)VALUES('" + nit + "','" + nombre + "','" + apellido + "','" + direccion + "','" + t + "','" + fecha_nacimiento + "')";
+			string insert = "insert into(id_clientes,nit,nombres,apellidos,direccion,telefono,fecha_nacimiento)VALUES('" + nit + "','" + nombre + "','" + apellido + "','" + direccion + "','" + t + "','" + fecha_nacimiento + "')";
 			const char* j = insert.c_str();
 			q_estado = mysql_query(cn.setConectar(), j);
 			if (q_estado) {
@@ -50,16 +50,16 @@ public:
 		cn.cerrar_conexion();
 	}
 	void Leer() {
-		int q_estado;
+		int q_estado ;
 		ConexionBD cn = ConexionBD();
 		MYSQL_ROW fila;
 		MYSQL_RES* resultado;
 		cn.abrir_conexion();
 		if (cn.setConectar()) {
-			string consulta = "SELECT * FROM clientes";
+			string consulta = "select * from clientes;";
 			const char* c = consulta.c_str();
 			q_estado = mysql_query(cn.setConectar(), c);
-			if (q_estado) {
+			if (!q_estado) {
 				resultado = mysql_store_result(cn.setConectar());
 				while (fila = mysql_fetch_row(resultado)) {
 					cout << fila[0] << "," << fila[1] << "," << fila[2]<<"," << fila[3]<<"," << fila[4]<<"," << fila[5]<<"," << fila[6]<< endl;
